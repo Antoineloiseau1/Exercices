@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
@@ -9,7 +10,7 @@ int main()
 	while(x<2)
 	{
 		scanf("%f", &radius[x]);
-		area[x]=3.1415*(radius[x]*radius[x]);
+		area[x]=3.1415*(pow(radius[x], 2));
 		printf("the area of %.2f is %.2fm2\n", radius[x], area[x]);
 		x++;
 	}
